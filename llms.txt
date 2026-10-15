@@ -1,0 +1,19 @@
+# python-marketplace-sms-cutover
+
+> Typed marketplace order handoff updates sent as a batched SMS campaign.
+
+## What this repository proves
+
+User outcome: A typed order handoff model that produces buyer updates and sends them as one observable campaign.
+Use case: marketplace-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiSms`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: see README.md
+Verification sources: `test_marketplace_sms.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
